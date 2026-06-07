@@ -1,17 +1,4 @@
-from fastapi import FastAPI
-
-app = FastAPI()
-
-@app.get("/")
-def root():
-    return {"message": "NIFTY FNO Agent is running"}
-
-@app.get("/health")
-def health():
-    return {"status": "ok"}
-
-@app.get("/daily-plan")
-def daily_plan():
+def run():
     return {
         "day": 1,
         "date": "2026-06-07",
